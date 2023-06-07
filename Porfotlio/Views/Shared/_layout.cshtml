@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AboutPage</title>
+    <style>
+            .topnav {
+                //position: fixed;
+                background-color: #7170E7;
+                overflow: hidden;
+                width: 100%;
+            }
+            /* Style the links inside the navigation bar */
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+                border-radius: 5px;
+            }
+            /* Right-aligned section inside the top navigation */
+            .topnav-right {
+            float: right;
+             }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #440f57;
+                color: white;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="@Url.Action("HomePage", "Home")"> Home</a>
+        <a href="@Url.Action("AboutPage", "Home")"> About Us</a>
+        <a href="@Url.Action("ProfileEnter", "Home")">Enter Profile</a>
+        <a href="@Url.Action("ProfileShow", "Home")"> Show Your Details</a>
+    </div>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <div class="footer">
+        <p>
+            &copy; Copyright Profile Dashboard
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
+
